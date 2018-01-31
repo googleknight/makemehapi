@@ -1,0 +1,23 @@
+{
+  "name": "makemehapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jest --coverage",
+    "coverage":"jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/googleknight/makemehapi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/googleknight/makemehapi/issues"
+  },
+  "homepage": "https://github.com/googleknight/makemehapi#readme",
+  "devDependencies": {
+    "jest": "^22.1.4"
+  }
+}
