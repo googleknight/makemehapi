@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/jest --coverage",
-    "coverage":"jest --coverage"
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "homepage": "https://github.com/googleknight/makemehapi#readme",
   "devDependencies": {
     "jest": "^22.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "hapi": "^17.2.0"
   }
 }
