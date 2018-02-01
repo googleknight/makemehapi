@@ -2,7 +2,7 @@ const handling = require('./handling');
 const request = require('request');
 const fs = require('fs');
 
-describe('The hapi server started should return a message with name on get request', () => {
+describe('The hapi server started should checking the response', () => {
   beforeAll((done) => {
     handling.server.start(() => {
       console.log('Server started');
