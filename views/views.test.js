@@ -19,4 +19,10 @@ describe('The hapi server started should responds with a file and a specified qu
       done();
     });
   });
+  it('Checking the response code', (done) => {
+    request(`http://localhost:${views.port}/?name=Handling`, (error, response, body) => {
+      expect(response.statusCode).toBe(200);
+      done();
+    });
+  });
 });
