@@ -19,4 +19,10 @@ describe('The hapi server started should return a message with name on get reque
       done();
     });
   });
+  it('Checking the string length returned from a get request to /{name} path to server', (done) => {
+    request(`http://localhost:${routes.port}/Shubham`, (error, response, body) => {
+      expect(body.length).toBe(13);
+      done();
+    });
+  });
 });
