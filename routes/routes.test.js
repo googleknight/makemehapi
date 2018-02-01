@@ -25,4 +25,10 @@ describe('The hapi server started should return a message with name on get reque
       done();
     });
   });
+  it('Checking the response code of the response', (done) => {
+    request(`http://localhost:${routes.port}/Shubhams`, (error, response, body) => {
+      expect(response.statusCode).toBe(200);
+      done();
+    });
+  });
 });
