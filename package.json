@@ -23,6 +23,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "hapi": "^16.6.2",
+    "inert": "^4.2.1",
     "request": "^2.83.0"
   }
 }
