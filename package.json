@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/googleknight/makemehapi#readme",
   "devDependencies": {
-    "jest": "^22.1.4"
+    "jest": "^22.1.4",
+    "supertest": "^3.0.0"
   },
   "dependencies": {
     "axios": "^0.17.1",
