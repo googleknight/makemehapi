@@ -21,4 +21,11 @@ describe('The hapi server started should serves a file in directory', () => {
       done();
     });
   });
+  it('Checking the response code from the server', (done) => {
+    request(`http://localhost:${directories.port}/foo/bar/baz/file.html`, (error, response, body) => {
+      const expectedData = fs.readFileSync('./directories/public/file.html').toString();
+      expect(response.statusCode).toBe(200);
+      done();
+    });
+  });
 });
