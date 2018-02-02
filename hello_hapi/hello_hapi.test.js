@@ -19,4 +19,10 @@ describe('The hapi server started should return a message on get request', () =>
       done();
     });
   });
+  it('Checking the response code of the response', (done) => {
+    request('http://localhost:8080', (error, response, body) => {
+      expect(response.statusCode).toBe(200);
+      done();
+    });
+  });
 });
