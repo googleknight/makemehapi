@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
+    "h2o2": "^6.1.0",
     "handlebars": "^4.0.11",
     "hapi": "^16.6.2",
     "inert": "^4.2.1",
