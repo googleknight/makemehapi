@@ -10,5 +10,13 @@ describe('The hapi server started should responds with a file and a specified qu
         done();
       });
   });
+  test('Checking the response code"', (done) => {
+    supertest(helping.listener)
+      .get('/?name=Helping&suffix=!')
+      .then((response) => {
+        expect(response.status).toBe(200);
+        done();
+      });
+  });
 });
 
