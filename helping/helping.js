@@ -24,7 +24,7 @@ server.views({
     html: handlebars,
   },
   helpersPath: './helping/helpers',
-  path: Path.join(__dirname, 'templates'),
+  path: './helping/templates',
 });
 // server.start(() => {
 //   console.log('Server started');
